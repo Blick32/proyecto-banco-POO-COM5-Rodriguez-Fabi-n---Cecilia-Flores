@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Created by SharpDevelop.
  * User: blick
  * Date: 18/10/2025
@@ -14,8 +14,8 @@ namespace Proyecto_Banco_v2
 	{
 		public static void Main(string[] args)
 		{
-			Banco banco = new Banco("Banco Sharp");
-        	Cliente c1 = new Cliente("Fabián", "Rodríguez", "12345678", "Calle Falsa 123", "555-1234", "fabian@mail.com");
+			Banco banco = new Banco("Banco");
+        	Cliente c1 = new Cliente("Fabián", "Rodríguez", "12345678", "Av Calchaqui 123", "1134567890", "fabian-rdz@gmail.com");
         	Cuenta cuenta1 = new Cuenta(1, "12345678", "Rodríguez", 1000);
 
         	banco.AgregarCliente(c1);
@@ -34,5 +34,7 @@ namespace Proyecto_Banco_v2
         	Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
 		}
+	}
+}
 	}
 }
